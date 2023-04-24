@@ -27,29 +27,13 @@ generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
 ```
 
 # Functions & Parameters #
-<table>
-    <tr>
-        <th>Function</th>
-        <th>Arguments</th>
-        <th>Returns</th>
-        <th>Example</th>
-    </tr>
-    <tr>
-        <td>**.generateDialogue()**</td>
-        <td>**1.** - Data in JSON format:
-        {
+
+## .generateDialogue() ##
+**Arguments:**
+> 1. {
             text: "The text of your dialogue. *string*",
             face_path: "The path to your character's face. This wouldn't work if you set **face_sequence**. *string*",
             face_sequence: "Sequence name. You should register it by using function **.createFaceSequence()** first. *string*",
             delay: "Milliseconds delay between frames, that is between characters render. *number*",
             shakeFace: "Responsible for face shaking while dialogue draw. *true/false*"
-        }</td>
-        <td>```js
-            generator.generateDialogue({ text: `* H-H-Hi!`, delay: 10,    face_path: __dirname + "/src/images/faces/Alphys/0.png" }).then(async(buffer) => {
-        await fs.writeFileSync(__dirname + "/mydialogue.gif", buffer);
-    }).catch((err) => {
-        console.log(err)
-    })
-        ```</td>
-    </tr>
-</table>
+        }
