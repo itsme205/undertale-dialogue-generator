@@ -1,5 +1,7 @@
 # undertale-dialogue-generator
-![dialog](https://user-images.githubusercontent.com/68152573/234080910-5a43fc41-eaac-4fc8-96a4-e66163026aad.gif)
+![dialog](https://user-images.githubusercontent.com/68152573/234082715-caf67f68-3e29-4213-aff1-9d0abe0578f9.gif)
+!(This GIF have borders!!! Just turn on dark theme)
+
 
 English 🇬🇧:
 > This script is generates the dialogues in Undertale game style and returns it as a .gif buffer, that could be saved as a file then. Besides, this script is have quite a few settings which could help to make a face animation of the character. Great for RPG games in chat.
