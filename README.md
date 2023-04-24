@@ -1,6 +1,6 @@
 # undertale-dialogue-generator
 ![dialog](https://user-images.githubusercontent.com/68152573/234082715-caf67f68-3e29-4213-aff1-9d0abe0578f9.gif)
-:---: (This GIF have borders!!! Just turn on dark theme)
+(This GIF have borders, just turn on dark theme)
 
 
 English 🇬🇧:
