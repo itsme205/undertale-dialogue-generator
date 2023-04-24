@@ -35,5 +35,20 @@ generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
             **``face_path``**: "The path to your character's face. This wouldn't work if you set **face_sequence**. *string*",  <br/>
             **``face_sequence``**: "Sequence name. You should register it by using function **.createFaceSequence()** first. *string*",  <br/>
             **``delay``**: "Milliseconds delay between frames, that is between characters render. *number*",  <br/>
-            **``shakeFace``**: "Responsible for face shaking while dialogue draw. *true/false*"  <br/>
+            **``shakeFace``**: "Responsible for face shaking while dialogue draw. *boolean*"  <br/>
         }  <br/>
+  <br/>
+  
+**Returns:**
+> Promise is returns generated buffer so you can save it.  <br/>
+
+**Example:**
+```js
+const generator = require('./generator.js');
+generator.generateDialogue({ text: `* H-H-Hello!`, delay: 10, face_path: __dirname + "/src/images/faces/Alphys/0.png" }).then(async(buffer) => {
+        await fs.writeFileSync(__dirname + "/mydialogue.gif", buffer);
+    }).catch((err) => {
+        console.log(err)
+    })
+```
+> This code is creates dialogue with text ``* H-H-Hello!`` and delay between characters ``10`` and static face, which located in ``__dirname + "/src/images/faces/Alphys/0.png"``
