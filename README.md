@@ -9,7 +9,8 @@ English 🇬🇧:
 
 # Usage #
 You can also the usage example in **example.js**.
-< const generator = require('./generator.js');
+```js
+const generator = require('./generator.js');
 const fs = require('fs');
 
 generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
@@ -23,4 +24,4 @@ generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
         console.log(err)
     })
 });
-> 
+```
