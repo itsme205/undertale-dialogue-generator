@@ -29,6 +29,7 @@ generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
 # Functions & Parameters #
 
 ## .generateDialogue() ##
+> Renders dialogue with provided parameters.
 **Arguments:**
 > 1.{  <br/>
             **``text``**: "The text of your dialogue. *string*",  <br/>
@@ -51,4 +52,33 @@ generator.generateDialogue({ text: `* H-H-Hello!`, delay: 10, face_path: __dirna
         console.log(err)
     })
 ```
-> This code is creates dialogue with text ``* H-H-Hello!`` and delay between characters ``10`` and static face, which located in ``__dirname + "/src/images/faces/Alphys/0.png"``
+> This code is creates dialogue with text ``* H-H-Hello!`` and delay between characters ``10`` and static face which located in ``__dirname + "/src/images/faces/Alphys/0.png"``  <br/>
+   
+   <br/>
+   <br/>
+   <br/>
+
+## .createFaceSequence() ##
+> Creating face sequence which could be played in **.generateDialogue()**.
+**Arguments:**
+> 1. sequenceName = "name" - ``name of the sequence``
+> 2. sequenceFrames = [] - ``array with paths to the sequences``  <br/>
+  <br/>
+  
+**Returns**
+> Nothing.  <br/>
+
+**Example**
+```js
+const generator = require('./generator.js');
+
+    generator.createFaceSequence("Flowey_seq_01", [
+    __dirname + "/src/images/faces/Flowey/2.png",
+    __dirname + "/src/images/faces/Flowey/0.png"
+]).then(async() => {
+    console.log("Sequence is created.");
+});
+```
+> This code is creating sequence with name ``Flowey_seq_01``.
+
+
