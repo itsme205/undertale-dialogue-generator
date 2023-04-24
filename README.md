@@ -1,10 +1,10 @@
 # undertale-dialogue-generator
 
 English 🇬🇧:
-> This script is generates the dialogues in Undertale game style and returns it as a .gif buffer, that could be saved as a file then. Besides, this script is have quite a few settings which could help to make a face animation of the character.
+> This script is generates the dialogues in Undertale game style and returns it as a .gif buffer, that could be saved as a file then. Besides, this script is have quite a few settings which could help to make a face animation of the character. Great for RPG games in chat.
 
 Русский 🇷🇺:
-> Этот скрипт генерирует диалоги в стиле игры Undertale и возвращает в качестве .gif буфера, который потом можно сохранить как файл. Помимо этого, у него немало настроек, которые помогут анимировать лицо персонажа.
+> Этот скрипт генерирует диалоги в стиле игры Undertale и возвращает в качестве .gif буфера, который потом можно сохранить как файл. Помимо этого, у него немало настроек, которые помогут анимировать лицо персонажа. Отлично подойдет для создания какой-либо RPG игры в чатах.
 
 
 # Usage #
@@ -82,3 +82,4 @@ const generator = require('./generator.js');
 > This code is creating sequence with name ``Flowey_seq_01``.
 
 
+P.S: String transfer (\n) could be working bad. I know it and maybe I will fix it later.
