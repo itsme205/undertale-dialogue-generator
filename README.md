@@ -30,12 +30,10 @@ generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
 
 ## .generateDialogue() ##
 **Arguments:**
-> 1. ```json
->       {
-            text "The text of your dialogue. string",
-            face_path: "The path to your character's face. This wouldn't work if you set face_sequence. string",
-            face_sequence: "Sequence name. You should register it by using function .createFaceSequence() first. string",
-            delay: "Milliseconds delay between frames, that is between characters render. number",
-            shakeFace: "Responsible for face shaking while dialogue draw. true/false"
+> 1.{
+            **``text``**: "The text of your dialogue. *string*",
+            **``face_path``**: "The path to your character's face. This wouldn't work if you set **face_sequence**. *string*",
+            **``face_sequence``**: "Sequence name. You should register it by using function **.createFaceSequence()** first. *string*",
+            **``delay``**: "Milliseconds delay between frames, that is between characters render. *number*",
+            **``shakeFace``**: "Responsible for face shaking while dialogue draw. *true/false*"
         }
-        ```
