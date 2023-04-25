@@ -38,7 +38,7 @@ module.exports = {
             var dialogueData = new Map();
             dialogueData.set("stringMaxCharacters", 29);
             dialogueData.set("x", 330);
-            dialogueData.set("y", 100);
+            dialogueData.set("y", 110);
 
             const canvas = createCanvas(1530, 425)
             const ctx = canvas.getContext('2d');
@@ -64,11 +64,10 @@ module.exports = {
             if (!face && !face_sequence) {
                 dialogueData.set("x", 50)
             }
-
             function loadBackground() {
                 ctx.drawImage(background, 0, 0, canvas.width, canvas.height)
                 if (face) {
-                    ctx.drawImage(face, (shakeFace ? Math.floor(Math.random() * (40 - 32) + 32) : 37), (shakeFace ? Math.floor(Math.random() * (38 - 34) + 34) : 35), 280, 350)
+                    ctx.drawImage(face, (shakeFace ? Math.floor(Math.random() * (40 - 32) + 32) : 32), (shakeFace ? Math.floor(Math.random() * (38 - 34) + 34) : 35), 300, 350)
                 }
             }
 
@@ -103,8 +102,9 @@ module.exports = {
                     if (face_sequence) {
                         face = faceSequences.get(face_sequence)[0]
                     }
+                    loadBackground()
                     ctx.fillText(overwritedText, dialogueData.get("x"), dialogueData.get("y"))
-                    encoder.setDelay(60000)
+                    encoder.setDelay(120000)
                     encoder.addFrame(ctx)
 
                     encoder.finish()
