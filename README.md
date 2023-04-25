@@ -63,7 +63,6 @@ generator.generateDialogue({ text: `* H-H-Hello!`, delay: 10, face_path: __dirna
 
 ## .createFaceSequence() ##
 > Creating face sequence which could be played in **.generateDialogue()**.
-**Arguments:**
 > 1. sequenceName = "name" - ``name of the sequence``
 > 2. sequenceFrames = [] - ``array with paths to the sequences``  <br/>
   <br/>
