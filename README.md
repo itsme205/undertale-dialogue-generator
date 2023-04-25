@@ -1,6 +1,7 @@
 # undertale-dialogue-generator
-![dialog](https://user-images.githubusercontent.com/68152573/234082715-caf67f68-3e29-4213-aff1-9d0abe0578f9.gif)
-(This GIF have borders, just turn on dark theme)
+![dialog1](https://user-images.githubusercontent.com/68152573/234369452-c9d28fbf-67e1-4ddb-b9d4-b653ff4f7256.gif)
+![dialog2](https://user-images.githubusercontent.com/68152573/234369552-246ef1b5-8e08-461d-8f31-f1a14527f6ea.gif)
+![dialog3](https://user-images.githubusercontent.com/68152573/234369569-ffb63102-aabd-407c-ab69-0155f18e2fe9.gif)
 
 
 English 🇬🇧:
@@ -33,8 +34,7 @@ generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
 
 ## .generateDialogue() ##
 > Renders dialogue with provided parameters.
-**Arguments:**
-> 1.{  <br/>
+> {  <br/>
             **``text``**: "The text of your dialogue. *string*",  <br/>
             **``face_path``**: "The path to your character's face. This wouldn't work if you set **face_sequence**. *string*",  <br/>
             **``face_sequence``**: "Sequence name. You should register it by using function **.createFaceSequence()** first. *string*",  <br/>
@@ -44,7 +44,7 @@ generator.createFaceSequence("Flowey_seq_01", [ // Creating a face sequence
   <br/>
   
 **Returns:**
-> Promise is returns generated buffer so you can save it.  <br/>
+> Promise is returns generated buffer so you can save it as a **.gif** with using **fs module**.  <br/>
 
 **Example:**
 ```js
