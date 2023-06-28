@@ -1,6 +1,5 @@
 # undertale-dialogue-generator
 ![dialog1](https://user-images.githubusercontent.com/68152573/234369452-c9d28fbf-67e1-4ddb-b9d4-b653ff4f7256.gif)
-![dialog2](https://user-images.githubusercontent.com/68152573/234369552-246ef1b5-8e08-461d-8f31-f1a14527f6ea.gif)
 ![dialog3](https://user-images.githubusercontent.com/68152573/234369569-ffb63102-aabd-407c-ab69-0155f18e2fe9.gif)
 
 
